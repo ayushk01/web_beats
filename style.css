@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.app{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1{
+	margin: 50px 0 30px 0;
+	text-align: center;
+	font-size: 40px;
+}
+
+header p{
+	font-size: 20px;
+}
+
+.instructions h2{
+	display: inline;
+}
+
+.instructions i{
+	font-size: 50px;
+}
+
+.about{
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 14px;
+}
+
+.about h3{
+	text-align: center;
+}
+
+.about .more a{
+	text-decoration: none;
+	color: #093dad;
+	margin: 10px;
+	display: block;
+}
+
+.about .more a i{
+	font-size: 30px;
+	margin-right: 5px;
+}
+
+.about .more{
+	display: none;
+}
+
+.pads{
+	width: 100%;
+	background: lightblue;
+	display: flex;
+}
+
+.pads > div{
+	height: 100px;
+	width: 100px;
+	flex: 1;
+}
+
+.pad1{
+	background: #60d394;
+}
+.pad2{
+	background: #f56868;
+}
+.pad3{
+	background: #d35ceb;
+}
+.pad4{
+	background: #d3d160;
+}
+.pad5{
+	background: #6860d3;
+}
+.pad6{
+	background: #60b2d3;
+}
+
+.visual > div {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+
+@keyframes jump{
+	0%{
+		bottom: 0%;
+		left: 20%;
+	}
+	50%{
+		bottom: 50%;
+		left: 50%;
+	}
+	80%{
+		bottom: 30%:
+		left: 60%;
+	}
+	100%{
+		bottom: 0%;
+		left: 80%;
+	}
+}
